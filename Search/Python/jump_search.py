@@ -10,10 +10,9 @@ def jump_search(arrToSearch, length, searchedValue):
         location += (location + jump_length)
 
     for i in range(location, (location - jump_length), -1):
-        if i == (location - jump_length):
-            return -1
-        elif arrToSearch[i] == searchedValue:
+        if arrToSearch[i] == searchedValue:
             return i
+    return -1
 
 arrToSearch = randomArray()
 arrToSearch.sort()
@@ -23,8 +22,6 @@ searchedValue = numberToSeach()
 index = jump_search(arrToSearch, len(arrToSearch), searchedValue)
 
 if index != -1:
-    print(index)
-    print(arrToSearch[index])
-    print("found at index: " + str(index) + "...printing index " + str(index) + " : " + str(arrToSearch[index]))
-else:
+    print("found at index: " + str(index))
+if index == -1:
     print("not found")
