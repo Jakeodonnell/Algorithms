@@ -1,4 +1,4 @@
-#Selectionsort pretty is slow, time complexity is O(N^2)
+#Selectionsort time complexity is O(N^2)
 from randomGen import randomArray
 from randomGen import numberToSeach
 import math
